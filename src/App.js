@@ -1,16 +1,17 @@
 import React, { Fragment, useEffect } from 'react';
-import { SearchBar } from './components/layout/SearchBar';
-import { Logs } from './components/layout/logs/Logs';
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
-import { AddBtn } from './components/layout/AddBtn';
-import './App.css';
-import { AddLogModal } from './components/layout/logs/AddLogModal';
-import { EditLogModal } from './components/layout/logs/EditLogModal';
-import { AddTechModal } from './components/Techs/AddTechModal';
-import { TechListModal } from './components/Techs/TechListModal';
+import SearchBar from './components/layout/SearchBar';
+import Logs from './components/logs/Logs';
+import AddBtn from './components/layout/AddBtn';
+import AddLogModal from './components/logs/AddLogModal';
+import EditLogModal from './components/logs/EditLogModal';
+import AddTechModal from './components/Techs/AddTechModal';
+import TechListModal from './components/Techs/TechListModal';
 import { Provider } from 'react-redux';
 import store from './store';
+
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
+import './App.css';
 
 const App = () => {
   useEffect(() => {
